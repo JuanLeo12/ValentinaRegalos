@@ -1,7 +1,13 @@
 .fondo {
   /* background-image: url("https://img.freepik.com/vector-gratis/circuitos-fondo-digital-degradado-azul-rojo_23-2148821701.jpg?w=740&t=st=1661217251~exp=1661217851~hmac=9e57034d0b59f1b0388d78e82ff4d80a5eb2cd88a3cdb3141f7c1bfd921bb9b7");
   background-size: cover; */
-  background: linear-gradient(90deg, orange, rgb(219, 149, 18), rgb(247, 210, 184), orange);
+  background: linear-gradient(
+    90deg,
+    orange,
+    rgb(219, 149, 18),
+    rgb(247, 210, 184),
+    orange
+  );
   background-size: 200% 100%;
   background-position: left;
   animation: slide-animation 5s linear infinite;
@@ -57,14 +63,25 @@
   text-align: center;
   padding: 7px;
 }
+
 #Titulo {
   padding: 20px;
   font-size: 60px;
   text-align: center;
   /*font-family: Arial, Helvetica, sans-serif;*/
-  font-family: 'Josefin Sans SemiBold', sans-serif;
-  
+  font-family: "Josefin Sans SemiBold", sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+  #Titulo {
+    padding: 20px;
+    text-align: center;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: "Josefin Sans SemiBold","Arial", "Helvetica", sans-serif;
+    font-size: 24px;
+  }
+}
+
 .ir-arriba {
   cursor: pointer;
   position: fixed;
